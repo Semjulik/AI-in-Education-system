@@ -1,0 +1,153 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twocolumn,twoside,slovak,a4paper]{coursepaper}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Yehveniia Kateieva}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Samuel Mikula\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{...@stuba.sk}}
+	}
+
+\date{\small 30. september 2015} % upravYehveniia
+{Kateievacument}
+
+\maketitle
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[scale=1.0]{obrazok2.png}
+  \caption{Diagram}
+  \label{fig:1.diagram}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[scale=1.0]{Obrazok1.png}
+  \caption{Diagram}
+  \label{fig:2.diagram}
+\end{figure}
+
+\begin{figure}
+\centering
+    \includegraphics[scale=0.7]{image.png}
+    \caption{fiit}
+    \label{fig:enter-label}
+\end{figure}
+
+\begin{ccc|c}
+
+
+
+\begin{abstract}
+\ldots
+\end{abstract}
+
+
+
+\section{Úvod}
+
+Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+
+Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
+Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
+Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
+Záverečné poznámky prináša časť~\ref{zaver}.
+
+
+
+\section{Nejaká časť} \label{nejaka}
+
+Z obr.~\ref{f:rozhod} je všetko jasné. 
+
+\begin{figure*}[tbh]
+\centering
+%\includegraphics[scale=1.0]{diagram.pdf}
+Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+\caption{Rozhodujúci argument.}
+\label{f:rozhod}
+\end{figure*}
+
+\section{Úvodná časť}
+Skúšame a hráme sa..
+\input{cv}
+\section{Iná časť} \label{ina}
+
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
+
+Ten istý zoznam, len číslovaný:
+
+\begin{enumerate}
+\item jedna vec
+\item druhá vec
+	\begin{enumerate}
+	\item x
+	\item y
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+
+\paragraph{Veľmi dôležitá poznámka.}
+Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+
+
+\section{Dôležitá časť} \label{dolezita}
+
+
+
+
+\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{https://www.unite.ai/cs/10-nejlep}%C5%A1%C3%ADch-AI-n%C3%A1stroj%C5%AF-pro-vzd%C4%9Bl%C3%A1v%C3%A1n%C3%AD/#:~:text=Um%C4%9Bl%C3%A1%20inteligence%20m%C5%AF%C5%BEe%20vytv%C3%A1%C5%99et%20pohlcuj%C3%ADc%C3%AD%20virtu%C3%A1ln%C3%AD}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Diagram 2024-10-10 14-48-39.png}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\bibliographystyle{alpha} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
